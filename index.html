@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square calculation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-200" >
+    <header>
+        <h1 class="text-6xl text-center pt-8"><span class="text-red-700 font-semibold ">Square</span> Calculation</h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <section class="mt-9">
+            <div class="grid grid-cols-2 gap-4  text-white font-semibold">
+                <div class="bg-green-600 p-16 rounded text-center">
+                    <h3 class="text-2xl">Square</h3>
+                    <h4 id="output-field" class="text-4xl">00 </h4>
+                </div>
+                <div class="bg-violet-700 p-16 rounded text-center">
+                    <h3 class="text-2xl">Square Root</h3>
+                    <h4 id="root-output" class="text-4xl">00 </h4>
+                </div>
+            </div>
+        </section>
+        <section class="mt-10">
+            <div class="grid grid-cols-1 gap-4">
+                <div class="bg-rose-700  text-center	items-center p-8 rounded">
+                    <h3 class="text-3xl pb-2 font-medium text-white">Input Your Number</h3>
+                    <div>
+                        <input id="input-number" class=" content-center border-2 rounded border-purple-300  w-2/4 mb-4 pl-2 "
+                            type="text" placeholder="Input a valid number">
+                        <br>
+                        <button onclick="squareNumber(),rootNumber()" id="square-button"
+                            class="text-white bg-green-700 py-2 px-4 rounded border-fuchsia-400 font-semibold">Square </button>
+                    </div>
+        
+                </div>
+                <!-- withdraw section -->
+               
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
